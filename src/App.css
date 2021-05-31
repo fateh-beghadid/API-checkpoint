@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --base-color: #333;
+  --purple-color: #6f42c1;
+  --blue-color: #007bff;
+  --blue-hover-color: #0062cc;
+  --light-color: #f8f9fa;
+  --dark-light-color: #6c757d;
+  --very-dark-color: #343a40;
+  --very-light-color: #ced4da;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  color: var(--base-color);
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  padding: 0 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  display: inline-block;
+  border: 1px solid var(--dark-light-color);
+  background: var(--dark-light-color);
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-blue {
+  border: 1px solid var(--blue-color);
+  background: var(--blue-color);
+}
+
+.btn:hover {
+  background: rgb(141, 4, 4);
+}
+
+.btn-blue:hover {
+  background: var(--blue-hover-color);
 }
